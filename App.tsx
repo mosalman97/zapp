@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from './src/components';
+import { Button,ButtonPlain } from './src/components';
 import * as Font from 'expo-font';
 
 let customFonts = {
@@ -25,7 +25,7 @@ export default function App() {
   }, [])
   return (
     (fontsLoaded ? <View style={styles.container}>
-      <Button backgroundColor={"green"} title={"Create new Account"} />
+     <ButtonPlain title={"Helo salman"} />
     </View> : null)
   );
 }
@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    // alignItems: 'center',
     justifyContent: 'center',
   },
 });
